@@ -1,36 +1,23 @@
-
+import logo from './logo.svg';
 import './App.css';
-import { Navbar, NavbarBrand } from 'reactstrap';
 import { Component } from 'react';
-import Menu from './components/MenuComponent';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { DISHES } from './shared/dishes';
+import Main from './components/MainComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dishes: DISHES
-    };
-  }
   render() {
     return (
-      <div className="App">
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+      <BrowserRouter>
+        <div className="App">
+          <div className='text-center'>
+          <Main />
           </div>
-        </Navbar> 
-        <Menu dishes={this.state.dishes} ></Menu> 
-      </div>
+        
+        </div>
+      </BrowserRouter>
+
     );
   }
 }
-
 export default App;
-
-
-
-
-

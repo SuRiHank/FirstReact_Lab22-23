@@ -4,20 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Hello from './Hello';
-import Counter from './Counter';
-import CounterFunction from './CounterFunction';
-import HelloAsClass from './HelloAsClass';
-import HelloAsFunction from './HelloAsFunction';
-import Menu from './components/MenuComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.css';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-  <section>
-    <App/>
-  </section>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
