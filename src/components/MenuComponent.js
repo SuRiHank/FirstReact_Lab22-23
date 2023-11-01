@@ -1,13 +1,6 @@
 import React from "react";
 import { Loading } from './LoadingComponent';
-import {
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardTitle,
-  Breadcrumb,
-  BreadcrumbItem,
-} from "reactstrap";
+import { Card, CardImg, CardImgOverlay,CardTitle,Breadcrumb,BreadcrumbItem,} from "reactstrap";
 import { Link } from "react-router-dom";
 
 function RenderMenuItem({ dish, isLoading, errMess}) {
